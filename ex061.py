@@ -13,7 +13,7 @@ while mais != 0:
         print('{} > '.format(termo), end='')
         termo += razão
         cont += 1
-    print('PAUSA')
+    print('PAUSA!')
     mais = int(input('Quantos termos mais você quer mostrar? '))
 print('Foram mostrados {} termos mostrados.'.format(total))
 print('FIM')
