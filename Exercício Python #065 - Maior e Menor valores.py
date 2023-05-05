@@ -13,6 +13,6 @@ while resp in 'Ss':
             menor = num
     resp = str(input('Deseja Continuar ? [S/N]'))
 media = soma / cont
-print('você digitou {} número e a média deles é {}'.format(cont, media))
+print(f'você digitou {cont} número e a média deles é {media}')
 print('Maior Número Digitado foi {} o menor foi {}'.format(maior, menor))
 
