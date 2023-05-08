@@ -1,4 +1,4 @@
-print('===== BANCO NSO =======')
+print('===== BANCO NSO =====!!==')
 valor = int(input('QUAL VALOR VOCÊ DESEJA SACAR ? R$'))
 total = valor
 nota = 50
