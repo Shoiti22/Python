@@ -6,6 +6,7 @@ while True:
     respo = ' '
     if 0 <= núm <= 20:
         print(f'Você digitou o número {cont[núm]}')
+    print('Tente novamente de 0 a 20', end= ' ')
     while respo not in ('S/N'):
         respo = str(input('Quer Continuar?')).strip().upper()[0]
     if respo == 'N':
