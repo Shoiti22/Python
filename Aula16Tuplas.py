@@ -132,7 +132,7 @@ for pos in range(0, len(listagem)):
 
 #comandos novos.
 #enumerate para numerar.
-#sorted para organizar. ordem alfabetica.
+#sorted para organizar. ordem alfabetica. reverse=True
 #index
 
 #isso é uma tupla ()
