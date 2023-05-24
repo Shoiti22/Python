@@ -16,7 +16,7 @@ else:
     print('Não achei número 4')
 print(num)
 print(f'Essa lista tem {len(num)} elementos')
-
+ 
 
 =======================================================
 
