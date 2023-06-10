@@ -24,6 +24,8 @@ teste[1] = 22
 galera.append(teste[:]) #sempre colocar em ambos, o [:]
 print(galera)
 
+ficha.append([nome, [nota1, nota2], media]) # importante ex089
+
 ==========================================================================
 
 galera = [['João', 19], ['Ana', 19], ['Fernanda', 25], ['Maria', 45]]
