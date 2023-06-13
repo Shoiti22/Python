@@ -26,3 +26,40 @@ print('  === RANKING DOS JOGADORES ===  ')
 for i, v in enumerate(ranking):
     print(f'{i+1} lugar: {v[0]} com {v[1]}.')
     sleep(1)
+
+===================================================================================================
+#EX 92
+from datetime import datetime
+dados = dict()
+dados['nome'] = str(input('Nome: '))
+nasc = int(input('Ano de Nascimento: '))
+dados['idade'] = datetime.now().year - nasc
+dados['ctps'] = int(input('CTPS (0 não tem): '))
+if dados['ctps'] != 0:
+    dados['contratação'] = int(input('Ano de contratação: '))
+    dados['salario'] = float(input('Salario R$: '))
+    dados['aposentadoria'] = dados['idade'] + ((dados['contratação'] + 35) - datetime.now().year)
+print('-=' * 30)
+for k, v in dados.items():
+    print(f' - {k} tem o valor {v}')
+
+========================================================================
+
+galera = list()
+pessoa = dict()
+while True:
+    pessoa['nome'] = str(input('Nome: '))
+    while True:
+        pessoa['sexo'] = str(input('Sexo [M/F]: ')).upper()[0]
+        if pessoa['sexo'] in 'MF':
+            break
+        print('ERRO APENAS DIGITE M OU F')
+    pessoa['idade'] = int(input('Idade: '))
+    resp = str(input('Quer Continuar? [S/N]')).upper()[0]
+
+    #FORMA ERRADA DE FAZER
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('DESEJA CONTINUAR S/N')).upper()[0]
+    if resp == 'N':
+        break
